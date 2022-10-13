@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@100;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+@mixin button{
+    width: 118px;
+    height: 48px;
+    background: #FF6E30;
+    border-radius: 8px;
+    border: none;
+    color: lavender;
+    margin:20px 0;
+    &:hover{
+      border: 2px solid #FF6E30;
+      background: black;
+      color: #FF6E30;
+    }
+  }
+body{
+  background: #1E252B;
+}
+//variables
+$a: #EE4248;
+$b: #1F2E35;
+//variables
+//mixins
+@mixin btn {
+  background: #EE4248;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  padding: 12px 30px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  transition: .4s;
+  &:hover {
+    transform: scale(1.1);
+    border: 1px solid #EE4248;
+    color: #EE4248;
+    background: transparent;
+  }
+}
+@mixin nav {
+  color: #1F2E35;
+  padding: 10px;
+  font-size: 18px;
+  transition: .4s;
+  &:hover {
+    transform: scale(1.1);
+    color: #EE4248;
+  }
+}
+@mixin icon {
+  color: #1F2E35;
+  padding: 0 10px;
+  font-size: 20px;
+  transition: .4s;
+  &:hover {
+    transform: scale(1.1);
+    color: #EE4248;
+  }
+}
+@mixin p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #30444E;
+  padding: 20px 0;
+}
+@mixin dis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin a1 {
+  color: #1F2E35;
+  padding: 10px;
+  font-size: 14px;
+  transition: .4s;
+  &:hover {
+    transform: scale(1.1);
+    color: #EE4248;
+  }
+}
+//mixins
